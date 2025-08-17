@@ -11,6 +11,9 @@ importers:
       '@polkadot-agent-kit/sdk':
         specifier: ^1.0.0
         version: 1.0.0(@browserbasehq/sdk@2.6.0)(@browserbasehq/stagehand@1.14.0(@playwright/test@1.54.2)(deepmerge@4.3.1)(dotenv@16.6.1)(openai@4.104.0(ws@8.18.3)(zod@3.25.76))(zod@3.25.76))(@ibm-cloud/watsonx-ai@1.6.10)(axios@1.11.0)(ibm-cloud-sdk-core@5.4.2)(jsonwebtoken@9.0.2)(openai@4.104.0(ws@8.18.3)(zod@3.25.76))(playwright@1.54.2)(rxjs@7.8.2)(weaviate-client@3.8.0)(ws@8.18.3)(yaml@2.8.1)(zod-to-json-schema@3.24.6(zod@3.25.76))
+      '@polkadot-api/descriptors':
+        specifier: ^0.0.1
+        version: 0.0.1
 
 packages:
 
@@ -717,6 +720,9 @@ packages:
 
   '@polkadot-api/codegen@0.18.0':
     resolution: {integrity: sha512-/U1H527V1BNXDa0ZE8IpaLY/c8iPtVQ6tBSSQbCh7xBhYw6ivdzin/zdCOKE2Xd8yXwgVn0mXV6jvg/nJWJhfw==}
+
+  '@polkadot-api/descriptors@0.0.1':
+    resolution: {integrity: sha512-p9esC+idLWlaeLy2V0z3x45xwRdAcNdiUSEeJaDDw6LJxj/WiyIOuhm3ki6gzl4oOZ0wAMuay3zhpVBDFgSEeQ==}
 
   '@polkadot-api/ink-contracts@0.3.7':
     resolution: {integrity: sha512-n72H9xu7E7gvVB3+YhRRcYuD5ozc5u2Camv/NyYRrKg+omoL3qtn6k9ucPb1j77GbrZA1dLXpBYmjd9fVuQ4Xg==}
@@ -3118,6 +3124,8 @@ snapshots:
       '@polkadot-api/substrate-bindings': 0.15.1
       '@polkadot-api/utils': 0.2.0
 
+  '@polkadot-api/descriptors@0.0.1': {}
+
   '@polkadot-api/ink-contracts@0.3.7':
     dependencies:
       '@polkadot-api/metadata-builders': 0.13.1
@@ -4137,7 +4145,7 @@ snapshots:
       isstream: 0.1.2
       jsonwebtoken: 9.0.2
       mime-types: 2.1.35
-      retry-axios: 2.6.0(axios@1.11.0(debug@4.4.1))
+      retry-axios: 2.6.0(axios@1.11.0)
       tough-cookie: 4.1.4
     transitivePeerDependencies:
       - supports-color
@@ -4570,7 +4578,7 @@ snapshots:
       onetime: 7.0.0
       signal-exit: 4.1.0
 
-  retry-axios@2.6.0(axios@1.11.0(debug@4.4.1)):
+  retry-axios@2.6.0(axios@1.11.0):
     dependencies:
       axios: 1.11.0(debug@4.4.1)
 

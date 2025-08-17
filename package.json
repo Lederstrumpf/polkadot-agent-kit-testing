@@ -1,5 +1,6 @@
 {
 	"dependencies": {
-		"@polkadot-agent-kit/sdk": "^1.0.0"
+		"@polkadot-agent-kit/sdk": "^1.0.0",
+		"@polkadot-api/descriptors": "^0.0.1"
 	}
 }
