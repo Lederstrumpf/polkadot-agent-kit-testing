@@ -1,3 +1,4 @@
+// via https://cocdap.github.io/agent-docs/quickstart.html
 import { PolkadotAgentKit } from '@polkadot-agent-kit/sdk';
 
 // Define the Polkadot Agent Kit API
@@ -11,6 +12,7 @@ agent.initializeApi();
 // Get balance of agent account
 const checkBalance = agent.getNativeBalanceTool();
 // Transfer native tokens to a recipient address on a specific chain.
-const transferNative = agent.transferNativeTool();
+// const transferNative = agent.transferNativeTool();
 // Transfer native tokens to a recipient address on a specific chain via xcm.
-const xcmTransferNativeAsset = agent.xcmTransferNativeTool();
+// TODO: agent.xcmTransferNativeTool does not exist - guessing transferNativeTool is just for chain-local transfers
+// const xcmTransferNativeAsset = agent.xcmTransferNativeTool();
