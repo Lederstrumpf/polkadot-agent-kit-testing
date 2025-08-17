@@ -1,10 +1,27 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "composite": true,
+    "target": "es2022",
     "module": "commonjs",
-    "outDir": "./dist",
+    "moduleResolution": "node",
     "strict": true,
-    "esModuleInterop": true
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationMap": true,
+    "baseUrl": ".",
+    "noEmitOnError": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "allowJs": true
   },
-  "include": ["*.ts"]
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["src/**/*.ts"]
 }
