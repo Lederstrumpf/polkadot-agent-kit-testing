@@ -1,9 +1,9 @@
 import { PolkadotAgentKit } from '@polkadot-agent-kit/sdk';
 
 // Define the Polkadot Agent Kit API
-const agent = new PolkadotAgentKit(<your private key>, {
-    keyType: "Sr25519", // "Ed25519", "Ecdsa"
-});
+const agent = new PolkadotAgentKit("someprivkey", {
+      keyType: "Sr25519", // "Ed25519", "Ecdsa"
+  });
 // Initialize the Polkadot Agent Kit API to connect to the Polkadot network
 agent.initializeApi();
 
